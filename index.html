@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>  
+  <h1>Age calculator app</h1>
+  </header>
+  
+  <div class="container">
+
+
+    <div class="containerDate">
+      <div class="date">
+        Day
+        <select id="day" class="date" onchange="calculateAge()"></select>
+      </div>
+      <div class="date">
+        Month
+        <select id="month" class="date" onchange="calculateAge()"></select>
+      </div>
+      <div class="date">
+        Year
+        <select id="year" class="date" onchange="calculateAge()"></select>
+      </div>
+    </div>
+
+
+    <div class="containerAge">
+      <div id="years" class="age"></div>
+      <div id="months" class="age"></div>
+      <div id="days" class="age"></div>
+    </div>
+
+
+    
+  </div>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
