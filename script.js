@@ -5,6 +5,10 @@ const yearSelect = document.getElementById("year");
 let month = 0;
 let day = 0;
 
+let years = 0;
+let months = 0;
+let days = 0;
+
 for (a = 1; a <= 31; a++) {
   var dayOption = document.createElement("option");
   day++;
@@ -71,9 +75,6 @@ function calculateAge() {
   nowMonth++;
   let nowYear = new Date().getFullYear();
 
-  let years = 0;
-  let months = 0;
-  let days = 0;
 
   years = nowYear - yearSelect.value;
 
