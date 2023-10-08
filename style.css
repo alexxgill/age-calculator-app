@@ -7,7 +7,7 @@ body{
     flex-flow: column wrap;
     justify-content: space-between;
 }
-.date{
+.date {
    width: 100px;   
    height: 40px;
    text-align: center;
