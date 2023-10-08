@@ -58,6 +58,10 @@ function bissesto(nowDay) {
   }
   if (daySelect.value > nowDay) {
     months--;
+    if(monthSelect.value == nowMonth){
+      years--;
+      months = months + 12;
+    }
     nowDay = nowDay + 29;
     days = nowDay - daySelect.value;
   }
@@ -116,6 +120,10 @@ function calculateAge() {
 
     if (daySelect.value > nowDay) {
       months--;
+      if(monthSelect.value == nowMonth){
+        years--;
+        months = months + 12;
+      }
       nowDay = nowDay + 30;
       days = nowDay - daySelect.value;
     }
@@ -156,6 +164,10 @@ function calculateAge() {
     }
     if (daySelect.value > nowDay) {
       months--;
+      if(monthSelect.value == nowMonth){
+        years--;
+        months = months + 12;
+      }
       nowDay = nowDay + 31;
       days = nowDay - daySelect.value;
     }
@@ -199,6 +211,10 @@ function calculateAge() {
 
       if (daySelect.value > nowDay) {
         months--;
+        if(daySelect.value > nowDay && monthSelect == nowMonth){
+          years--;
+          months = months + 12;
+        }
         nowDay = nowDay + 28;
         days = nowDay - daySelect.value;
       }
@@ -212,6 +228,10 @@ function calculateAge() {
 
   if (daySelect.value > nowDay) {
     months--;
+    if(monthSelect.value == nowMonth){
+      years--;
+      months = months + 12;
+    }
     nowDay = nowDay + 30;
     days = nowDay - daySelect.value;
   }
