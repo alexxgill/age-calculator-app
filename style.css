@@ -14,12 +14,6 @@ body{
    padding: 10px;
    border-radius: 10px;
 }
-main{
-    background-color: white;
-    border-radius: 20px;
-    height: 300px;
-    border-style: groove;
-}
 .containerDate{    
     display: flex;
     flex-flow: row wrap;
