@@ -1,34 +1,59 @@
-body{
+body {
     padding: 0;
-    background-color: rgb(223, 219, 219);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     justify-content: space-between;
 }
-.date {
-   width: 100px;   
-   height: 40px;
-   text-align: center;
-   padding: 10px;
-   border-radius: 10px;
+
+h1 {
+    font-family: Impact;
 }
-.containerDate{    
+
+footer {
+    font-size: 13px;
+    text-align: center;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+main {
+    border-radius: 20px;
+    height: 400px;
+    border-style: groove;
+    text-align: center;
+    margin-top: 30px;
+    background-image: url("./assets/images/textura.jpg");
+    font-size: 20px;
+}
+
+.date {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.containerDate {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-.containerAge{    
+
+.containerAge {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
 }
 
-.age{
+.age {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;    
-    padding-top: 30px;   
+    font-size: 30px;
+    padding-top: 30px;
     padding-left: 10px;
 }

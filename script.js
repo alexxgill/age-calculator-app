@@ -36,6 +36,7 @@ for (a = 1900; a < 2022; a++) {
   yearOption.value = year;
   yearOption.append(year);
   yearSelect.appendChild(yearOption);
+  
 }
 
 function bissesto(nowDay) {
