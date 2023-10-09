@@ -19,7 +19,13 @@ footer {
 footer a {
     color: hsl(228, 45%, 44%);
 }
-
+select:hover{
+    background-color: rgb(144, 148, 151);
+    cursor: pointer;
+}
+option{
+    background-color: white;
+}
 .date {
     width: 100px;
     height: 40px;
