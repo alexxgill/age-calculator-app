@@ -212,7 +212,7 @@ function calculateAge() {
 
       if (daySelect.value > nowDay) {
         months--;
-        if(daySelect.value > nowDay && monthSelect == nowMonth){
+        if(monthSelect.value == nowMonth){
           years--;
           months = months + 12;
         }
