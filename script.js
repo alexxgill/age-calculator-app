@@ -74,7 +74,6 @@ function bissesto(nowDay) {
 calculateAge();
 
 function calculateAge() {
-  let day = 0;
   let nowDay = new Date().getDate();
   let nowMonth = new Date().getMonth();
   nowMonth++;
