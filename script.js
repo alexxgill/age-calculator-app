@@ -36,9 +36,7 @@ for (a = 1900; a < 2022; a++) {
   yearOption.value = year;
   yearOption.append(year);
   yearSelect.appendChild(yearOption);
-  
 }
-
 function bissesto(nowDay, nowMonth) {
   
   if(daySelect.value>29) daySelect.value = 1;
