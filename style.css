@@ -20,16 +20,6 @@ footer a {
     color: hsl(228, 45%, 44%);
 }
 
-main {
-    border-radius: 20px;
-    height: 400px;
-    border-style: groove;
-    text-align: center;
-    margin-top: 30px;
-    background-image: url("./assets/images/textura.jpg");
-    font-size: 20px;
-}
-
 .date {
     width: 100px;
     height: 40px;
