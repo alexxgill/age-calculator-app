@@ -22,6 +22,7 @@ footer a {
 select:hover{
     background-color: rgb(144, 148, 151);
     cursor: pointer;
+    border: 3px groove black;
 }
 option{
     background-color: white;
