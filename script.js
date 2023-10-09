@@ -39,7 +39,7 @@ for (a = 1900; a < 2022; a++) {
   
 }
 
-function bissesto(nowDay) {
+function bissesto(nowDay, nowMonth) {
   
   if(daySelect.value>29) daySelect.value = 1;
   switch (daySelect.childElementCount) {
@@ -57,14 +57,15 @@ function bissesto(nowDay) {
       daySelect.appendChild(dayOption);
       break;
   }
+
   if (daySelect.value > nowDay) {
-    months--;
     if(monthSelect.value == nowMonth){
       years--;
       months = months + 12;
     }
     nowDay = nowDay + 29;
     days = nowDay - daySelect.value;
+    console.log(days);
   }
   else {
     days = nowDay - daySelect.value;
@@ -180,12 +181,12 @@ function calculateAge() {
     if (yearSelect.value % 4 == 0) {
       if (yearSelect.value % 100 == 0) {
         if (yearSelect.value & 400 == 0) {
-          bissesto(nowDay);
+          bissesto(nowDay, nowMonth);
           console.log("bissesto");
         }
       }
       else {
-        bissesto(nowDay);
+        bissesto(nowDay, nowMonth);
         console.log("bissesto");
       }
     }
